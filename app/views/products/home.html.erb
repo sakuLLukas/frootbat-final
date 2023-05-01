@@ -1,0 +1,20 @@
+<h1>Welcome to our store</h1>
+
+<section>
+  <h2>Featured products</h2>
+  <% @products.each do |product| %>
+    <div>
+      <%= image_tag product.image_url %>
+      <h3><%= product.name %></h3>
+      <p><%= product.description %></p>
+      <p><%= number_to_currency product.price %></p>
+    </div>
+  <% end %>
+</section>
+
+<footer>
+  <ul>
+    <li><%= link_to 'About us', about_path %></li>
+    <li><%= link_to 'Contact us', contact_path %></li>
+  </ul>
+</footer>

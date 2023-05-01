@@ -15,8 +15,9 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
+# gem 'devise'
 # Use devise for authentication
-gem 'devise'
+
 # Use cancancan for implementing user authorisation
 gem 'cancancan'
 
@@ -27,7 +28,10 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+
+#gem 'paper_trail'
+# for tracking changes to db records
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
